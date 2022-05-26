@@ -30,7 +30,7 @@ return packer.startup(function()
   require('plugins.ui.lualine').use(packer)
   require('plugins.ui.toggleterm').use(packer)
   require('plugins.ui.nvim-colorizer').use(packer)
-  
+
   -------------------- telescope ------------------------
   require('plugins.telescope.telescope').use(packer)
 
@@ -40,6 +40,11 @@ return packer.startup(function()
   ----------------------- lsp ---------------------------
   require('plugins.lsp.lsp-signature').use(packer)
   require('plugins.lsp.nvim-lsp-installer').use(packer)
+
+  ----------------------- dap ---------------------------
+  require('plugins.dap.nvim-dap').use(packer)
+  require('plugins.dap.nvim-dap-ui').use(packer)
+  require('plugins.dap.nvim-dap-virtual-text').use(packer)
 
   -- theme
   use {
