@@ -3,25 +3,49 @@ local M = {}
 M.use = function(packer)
   packer.use {
     "nvim-neorg/neorg",
+    after = 'nvim-treesitter',
     config = function()
+      local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
+
+      parser_configs.norg_meta = {
+        install_info = {
+          url = "https://github.com/nvim-neorg/tree-sitter-norg-meta",
+          files = {
+            "src/parser.c",
+          },
+          branch = "main",
+        },
+      }
+
+      parser_configs.norg_table = {
+        install_info = {
+          url = "https://github.com/nvim-neorg/tree-sitter-norg-table",
+          files = {
+            "src/parser.c",
+          },
+          branch = "main",
+        },
+      }
       require('neorg').setup {
         load = {
           -- core
           ["core.defaults"] = {},
-          ["core.gtd.base"] = {},
           ["core.norg.completion"] = {},
           ["core.norg.concealer"] = {},
           ["core.norg.dirman"] = {
             config = {
               workspaces = {
-                work = "~/workspaces/personal/note",
-                home = "~/workspaces/personal/note",
+                home = "~/workspace/personal/note",
               }
+            }
+          },
+          ["core.gtd.base"] = {
+            config = {
+              workspace = "home"
             }
           },
           ["core.norg.journal"] = {},
           ["core.norg.qol.toc"] = {},
-          ["core.presenter"] = {},
           -- external
           -- ["cool.module"] = {},
           -- community
