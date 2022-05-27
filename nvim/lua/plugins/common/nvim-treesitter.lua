@@ -10,6 +10,7 @@ M.use = function(packer)
                "lua",
                "vim",
                "norg",
+               "markdown",
             },
             highlight = {
                enable = true,
