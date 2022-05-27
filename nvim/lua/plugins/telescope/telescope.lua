@@ -58,11 +58,8 @@ M.use = function(packer)
                buffer_previewer_maker = require("telescope.previewers").buffer_previewer_maker,
             },
          }
-      
          telescope.setup(default)
-      
-         local extensions = { "themes", "terms", "fzf"}
-      
+         local extensions = { "ui-select", "themes", "terms", "fzf"}
          pcall(function()
             for _, ext in ipairs(extensions) do
                telescope.load_extension(ext)
