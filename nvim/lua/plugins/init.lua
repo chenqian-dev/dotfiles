@@ -26,6 +26,9 @@ return packer.startup(function()
   require('plugins.util.which-key').use(packer)
   require('plugins.util.nvim-spectre').use(packer)
 
+  ---------------------- note --------------------------
+  require('plugins.note.neorg').use(packer)
+
   ----------------------- ui ---------------------------
   require('plugins.ui.aerial').use(packer)
   require('plugins.ui.nvim-tree').use(packer)
@@ -45,6 +48,7 @@ return packer.startup(function()
   ----------------------- lsp ---------------------------
   require('plugins.lsp.lsp-signature').use(packer)
   require('plugins.lsp.nvim-lsp-installer').use(packer)
+  require('plugins.lsp.litee').use(packer)
 
   ----------------------- dap ---------------------------
   require('plugins.dap.nvim-dap').use(packer)

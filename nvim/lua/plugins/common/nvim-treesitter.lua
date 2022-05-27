@@ -9,6 +9,7 @@ M.use = function(packer)
             ensure_installed = {
                "lua",
                "vim",
+               "norg",
             },
             highlight = {
                enable = true,
