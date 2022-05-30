@@ -35,7 +35,7 @@ M.use = function(packer)
           ["core.norg.dirman"] = {
             config = {
               workspaces = {
-                home = "~/workspace/personal/note",
+                home = "~/workspace/personal/note/Plans",
               }
             }
           },

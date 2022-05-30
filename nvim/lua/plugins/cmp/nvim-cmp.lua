@@ -26,13 +26,14 @@ M.use = function(packer)
           end
         },
         mapping = {
-          ["<Tab>"] = cmp.mapping(function(fallback)
+          ["<Tab>"] = cmp.mapping(function()
             if cmp.visible() then
               cmp.select_next_item()
             elseif has_words_before() then
               cmp.complete()
             else
-              fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+              cmp.mapping.abort()
+              -- fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
             end
           end, {"i", "s"}),
           ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), {'i', 'c'}),
