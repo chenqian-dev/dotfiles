@@ -14,6 +14,7 @@ map("i", "<c-h>", "<left>", opts)
 map("i", "<c-j>", "<down>", opts)
 map("i", "<c-k>", "<up>", opts)
 map("i", "<c-l>", "<right>", opts)
+map("i", "<c-n>", "<Esc> o", opts)
 
 -- buffer
 ------------------------------------------------------------------
