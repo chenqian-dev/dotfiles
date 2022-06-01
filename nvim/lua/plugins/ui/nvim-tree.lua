@@ -22,6 +22,7 @@ M.use = function(packer)
           side = "left",
           width = 25,
           hide_root_folder = true,
+          preserve_window_proportions = true,
         },
         git = {
           enable = false,
@@ -30,7 +31,7 @@ M.use = function(packer)
         actions = {
           open_file = {
             quit_on_open = false,
-            resize_window = true,
+            resize_window = false,
             window_picker = {
               enable = true,
               chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
