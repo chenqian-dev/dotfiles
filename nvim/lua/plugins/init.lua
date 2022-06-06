@@ -58,11 +58,5 @@ return packer.startup(function()
 
   ---------------------- theme --------------------------
   require('plugins.theme.catppuccin').use(packer)
-  -- use {
-  --   "rmehri01/onenord.nvim",
-  --   config = function()
-  --     require("onenord").setup()
-  --   end
-  -- }
 
 end)
