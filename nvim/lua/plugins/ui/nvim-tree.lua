@@ -89,7 +89,7 @@ M.use = function(packer)
   }
   -- key map
   vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeFindFileToggle <CR>", { noremap = true, silent = true })
-  vim.api.nvim_set_keymap("n", "<C-m>", ":NvimTreeFindFindFile <CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("n", "<C-m>", ":NvimTreeFindFile <CR>", { noremap = true, silent = true })
 end
 
 return M
