@@ -7,6 +7,7 @@ M.use = function(packer)
       local dap = require('dap')
       -- server
       require('plugins.dap.configs.cpptools').on_setup(dap)
+      require('plugins.dap.configs.debugpy').on_setup(dap)
       -- require('plugins.dap.configs.codelldb').on_setup(dap)
       -- config
       dap.defaults.fallback.terminal_win_cmd = '30vsplit new' -- this will be overrided by dapui

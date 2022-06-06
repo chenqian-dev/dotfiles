@@ -1,6 +1,6 @@
 return {
   on_setup = function (dap)
-    local cmd = os.getenv("HOME") .. "/.config/nvim/data/dap/codelldb/adapter/codelldb"
+    local cmd = os.getenv("HOME") .. "/.config/nvim/data/dap/adapter/codelldb"
     dap.adapters.codelldb = function(on_adapter)
       -- This asks the system for a free port
       local tcp = vim.loop.new_tcp()

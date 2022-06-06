@@ -31,7 +31,7 @@ M.use = function(packer)
         actions = {
           open_file = {
             quit_on_open = false,
-            resize_window = false,
+            resize_window = true,
             window_picker = {
               enable = true,
               chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
@@ -89,6 +89,7 @@ M.use = function(packer)
   }
   -- key map
   vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeFindFileToggle <CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("n", "<C-m>", ":NvimTreeFindFindFile <CR>", { noremap = true, silent = true })
 end
 
 return M
