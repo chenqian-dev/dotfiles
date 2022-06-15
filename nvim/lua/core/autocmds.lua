@@ -8,7 +8,7 @@
 -- Don't show any numbers inside terminals
 vim.cmd [[ au TermOpen term://* setlocal nonumber norelativenumber | setfiletype terminal ]]
 vim.cmd [[
-let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
+let g:catppuccin_flavour = "latte" " latte, frappe, macchiato, mocha
 colorscheme catppuccin
 ]]
 -- Don't show status line on certain windows
