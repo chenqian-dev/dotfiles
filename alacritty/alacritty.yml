@@ -382,7 +382,7 @@ color_schemes:
       text: "#3B4252"
       cursor: "#ECEFF4"
 
-colors: *latte
+colors: *frappe
 
 cursor:
   style:

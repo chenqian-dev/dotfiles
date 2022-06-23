@@ -10,7 +10,7 @@ M.use = function(packer)
       -- require('plugins.dap.configs.debugpy').on_setup(dap)
       -- require('plugins.dap.configs.codelldb').on_setup(dap)
       -- config
-      dap.defaults.fallback.terminal_win_cmd = '30vsplit new' -- this will be overrided by dapui
+      -- dap.defaults.fallback.terminal_win_cmd = '30vsplit new' -- this will be overrided by dapui
       dap.set_log_level("DEBUG")
       require('dap.ext.vscode').load_launchjs(nil, { cppdbg = { 'c', 'cpp' } })
       -- key map
