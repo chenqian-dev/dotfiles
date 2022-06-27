@@ -2,7 +2,11 @@ theme = "catppuccin"
 
 [editor]
 line-number = "absolute"
-mouse = false
+mouse = true
+idle-timeout = 100
+
+[editor.lsp]
+display-messages = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -16,7 +20,6 @@ hidden = false
 # At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
 [keys.normal]
 C-s = ":w" # Maps the Control-s to the typable command :w which is an alias for :write (save file)
-C-o = ":open ~/.config/helix/config.toml" # Maps the Control-o to opening of the helix config file
 
 [keys.insert]
 "A-x" = "normal_mode" # Maps Alt-X to enter normal mode
