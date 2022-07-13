@@ -1,4 +1,4 @@
-theme = "catppuccin"
+theme = "catpuccin"
 
 [editor]
 line-number = "absolute"
@@ -22,4 +22,7 @@ hidden = false
 C-s = ":w" # Maps the Control-s to the typable command :w which is an alias for :write (save file)
 
 [keys.insert]
-"A-x" = "normal_mode" # Maps Alt-X to enter normal mode
+#C-h = "move_char_left" 
+#C-j = "move_char_down" 
+#C-k = "move_char_up" 
+#C-l = "move_char_right" 

@@ -384,6 +384,9 @@ color_schemes:
 
 colors: *frappe
 
+env:
+  TERM: xterm-256color
+
 cursor:
   style:
     blinking: Never
@@ -391,19 +394,19 @@ cursor:
 font:
   normal:
     style: Regular
-    family: "Hack Nerd Font"
+    family: "JetBrainsMono Nerd Font"
 
   # The bold font face
   bold:
-    family: "Hack Nerd Font"
+    family: "JetBrainsMono Nerd Font"
     style: Medium
 
   # The italic font face
   italic:
-    family: "Hack Nerd Font"
-    style: "Light Italic"
+    family: "JetBrainsMono Nerd Font"
+    style: "Italic"
 
-  size: 11.0
+  size: 10.0
 
   ligatures: true
 

@@ -1,6 +1,6 @@
 # Language support configuration.
 # See the languages documentation: https://docs.helix-editor.com/master/languages.html
-use-grammars = { only = [ "rust", "c", "cpp" ] }
+use-grammars = { only = [ "rust", "c", "cpp", "markdown" ] }
 
 
 [[language]]
@@ -22,9 +22,10 @@ indent = { tab-width = 4, unit = "    " }
 '`' = '`'
 
 [language.debugger]
-name = "lldb-vscode"
-transport = "stdio"
-command = "lldb-vscode"
+name = "codelldb"
+transport = "tcp"
+command = "codelldb"
+port-arg = "--port {}"
 
 [[language.debugger.templates]]
 name = "binary"
@@ -148,9 +149,10 @@ language-server = { command = "clangd" }
 indent = { tab-width = 2, unit = "  " }
 
 [language.debugger]
-name = "lldb-vscode"
-transport = "stdio"
-command = "lldb-vscode"
+name = "codelldb"
+transport = "tcp"
+command = "codelldb"
+port-arg = "--port {}"
 
 [[language.debugger.templates]]
 name = "binary"
@@ -185,15 +187,22 @@ language-server = { command = "clangd" }
 indent = { tab-width = 2, unit = "  " }
 
 [language.debugger]
-name = "lldb-vscode"
-transport = "stdio"
-command = "lldb-vscode"
+name = "codelldb"
+transport = "tcp"
+command = "codelldb"
+port-arg = "--port 10086"
 
 [[language.debugger.templates]]
 name = "binary"
 request = "launch"
 completion = [ { name = "binary", completion = "filename" } ]
-args = { console = "internalConsole", program = "{0}" }
+args = { console = "internalConsole", program = "{0}"}
+
+[[language.debugger.templates]]
+name = "binary(terminal)"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", runInTerminal = true}
 
 [[language.debugger.templates]]
 name = "attach"

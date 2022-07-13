@@ -2,3 +2,5 @@ lazygit/state.yml
 nvim/plugin
 nvim/nohup.out
 nvim/data
+helix/debugger
+helix/runtime
