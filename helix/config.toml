@@ -1,4 +1,4 @@
-theme = "catpuccin"
+theme = "catppuccin"
 
 [editor]
 line-number = "absolute"
@@ -16,6 +16,8 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
+[editor.explorer]
+position = "overlay"   # embed or overlay
 
 # At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
 [keys.normal]
@@ -26,3 +28,5 @@ C-s = ":w" # Maps the Control-s to the typable command :w which is an alias for 
 #C-j = "move_char_down" 
 #C-k = "move_char_up" 
 #C-l = "move_char_right" 
+
+

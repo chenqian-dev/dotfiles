@@ -394,16 +394,16 @@ cursor:
 font:
   normal:
     style: Regular
-    family: "JetBrainsMono Nerd Font"
+    family: "Hack Nerd Font"
 
   # The bold font face
   bold:
-    family: "JetBrainsMono Nerd Font"
+    family: "Hack Nerd Font"
     style: Medium
 
   # The italic font face
   italic:
-    family: "JetBrainsMono Nerd Font"
+    family: "Hack Nerd Font"
     style: "Italic"
 
   size: 10.0
