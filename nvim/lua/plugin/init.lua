@@ -110,6 +110,7 @@ packer.startup({
 
     
     ----------------------- 待安装 --------------------------
+    -- ggandor/leap.nvim
     -- folke/todo-comments.nvim
     -- use("ahmedkhalf/project.nvim")
     -- -- 常见编程语言代码段
