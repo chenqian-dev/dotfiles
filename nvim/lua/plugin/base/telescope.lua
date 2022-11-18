@@ -52,8 +52,12 @@ telescope.setup({
 })
 
 telescope.load_extension("ui-select")
--- 需要安装 ripgrep
-telescope.load_extension("live_grep_args")
+
+local status, live_grep_args = pcall(require, "live_grep_args")
+if status then
+  -- 需要安装 ripgrep
+  telescope.load_extension("live_grep_args")
+end
 
 -- key map
 local map = vim.api.nvim_set_keymap
