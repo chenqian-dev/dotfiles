@@ -9,7 +9,7 @@ lspsaga.init_lsp_saga({
 })
 
 
--- local keymap = vim.keymap.set
+local keymap = vim.keymap.set
 -- -- Lsp finder find the symbol definition implement reference
 -- -- if there is no implement it will hide
 -- -- when you use action in finder like open vsplit then you can
@@ -35,8 +35,8 @@ lspsaga.init_lsp_saga({
 -- keymap("n", "<leader>cd", "<cmd>Lspsaga show_cursor_diagnostics<CR>", { silent = true })
 --
 -- -- Diagnsotic jump can use `<c-o>` to jump back
--- keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
--- keymap("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
+keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
+keymap("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
 --
 -- -- Only jump to error
 -- keymap("n", "[E", function()

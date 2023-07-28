@@ -69,6 +69,8 @@ packer.startup({
     use("Shatur/neovim-session-manager")
     use("folke/which-key.nvim")
     use { "folke/zen-mode.nvim" }
+    use { "folke/todo-comments.nvim" } 
+
     -- cmp
     use({ 'hrsh7th/nvim-cmp' })
     use("hrsh7th/vim-vsnip")
@@ -86,10 +88,10 @@ packer.startup({
     use("nvim-telescope/telescope-ui-select.nvim")
     use("nvim-telescope/telescope-live-grep-args.nvim")
     -- theme
-    -- use("catppuccin/nvim")
+    use("catppuccin/nvim")
     -- use("projekt0n/github-nvim-theme")
     -- use 'shaunsingh/nord.nvim'
-    use 'rmehri01/onenord.nvim'
+    -- use 'rmehri01/onenord.nvim'
     
     ----------------------- lsp --------------------------
     use({ "neovim/nvim-lspconfig" })
@@ -111,7 +113,6 @@ packer.startup({
     
     ----------------------- 待安装 --------------------------
     -- ggandor/leap.nvim
-    -- folke/todo-comments.nvim
     -- use("ahmedkhalf/project.nvim")
     -- -- 常见编程语言代码段
     -- use("rafamadriz/friendly-snippets")
@@ -155,12 +156,13 @@ require('plugin.base.hop')
 require('plugin.base.neovim-session-manager')
 require('plugin.base.which-key')
 require('plugin.base.zen-mode')
+require('plugin.base.todo-comments')
 require('plugin.base.cmp')
 require('plugin.base.telescope')
--- require('plugin.base.theme.catppuccin')
+require('plugin.base.theme.catppuccin')
 -- require('plugin.base.theme.github-nvim-theme')
 -- require('plugin.base.theme.nord')
-require('plugin.base.theme.onenord')
+-- require('plugin.base.theme.onenord')
 
 ----------------------- lsp ---------------------------
 require('plugin.lsp.lspconfig')

@@ -5,6 +5,8 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 map("n", "<C-s>", ":w <CR>", opts)
+map("i", "<C-s>", ":w <CR>", opts)
+map("v", "<C-s>", ":w <CR>", opts)
 
 --移动-----------------------------------------------------------
 map("i", "<C-h>", "<left>", opts)
@@ -17,6 +19,10 @@ map("n", "H", "5h", opts)
 map("n", "J", "5j", opts)
 map("n", "K", "5k", opts)
 map("n", "L", "5l", opts)
+map("v", "H", "5h", opts)
+map("v", "J", "5j", opts)
+map("v", "K", "5k", opts)
+map("v", "L", "5l", opts)
 
 -- buffer--------------------------------------------------------
 map("n", "<m-d>", ":lua require('base.utils').close_buffer() <CR>", opts)
